@@ -11,7 +11,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Login gestion cartera</title>
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6cs
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
@@ -20,64 +20,53 @@
   <link rel="stylesheet" href="css/adminlte.min.css">
 </head>
 <body>
-    <!-- Main content -->
-    <br>
-    <br>
-        <div class="container">
-          <div class="row">
-            <!-- left column -->
-            <div class="col-md-6">
-              <!-- jquery validation -->
-              <div class="card card-primary">
-                <div class="card-header">
-                  <h3 class="card-title">Gestion Cartera 2.0</h3>
-                </div>
-                
-                <!-- /.card-header -->
-                <!-- form start -->
-                <form id="quickForm">
-                  <div class="card-body">
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Usuario</label>
-                      <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Ingrese su usuario">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputPassword1">Contraseña</label>
-                      <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Ingrese su contraseña">
-                    </div>
-                    <div class="form-group mb-0">
-                    </div>
-                  </div>
-                  <!-- /.card-body -->
-                  <div class="card-footer">
-                    <button type="submit" class="btn btn-primary">Entrar</button>
-                  </div>
-                </form>
-              </div>
-              <!-- /.card -->
-              </div>
-            <!--/.col (left) -->
-            <!-- right column -->
-            <div class="col-md-6">
-  
-            </div>
-            <!--/.col (right) -->
-            <footer class="main-footer">
-                <div class="float-right">
-                  <b>Version</b> 2.0
-                </div>
-                <strong>Copyright &copy; 2022 <a href="#">Proyecto final Sena</a>.</strong> Todos los derechos reservados.
-              </footer>
-          </div>
-          <!-- /.row -->
-        </div><!-- /.container-->
-      <!-- /.content -->
-
-  <!-- /.content-wrapper -->
+<!--Start login-->
+<div class="container mt-4 col-lg-4">
+  <div class="card col-sm-10">
+    <div class="card-body">
+      <form class="form-sign" action="Validarlogin" method="POST">
+        <div class="form-group text-center">
+          <h3 style="color:#525558;">Login</h3>
+          <img src="img/accedo-logo.png" alt="70" width="170">
+          <br>
+          <label style="color:#525558;">Bienvenidos al Sistema.</label>
+        </div>
+        <div class="form-group">
+          <label>Usuario:</label>
+          <input type="text" name="txtuser" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Password:</label>
+          <input type="password" name="txtpassword" class="form-control">
+        </div>
+        <input type="submit" name="accion" value="Ingresar" class="btn btn-secondary btn-block">
+      </form>
+    </div>
+  </div>
 </div>
-<!-- ./wrapper -->
-
+<footer class="bg-light text-center text-lg-start">
+  <!-- Copyright -->
+  
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    <div class="float-right">
+      <b>Version</b> 2.0
+    </div>
+    © 2022 Todos los derechos reservados:
+    <a class="text-dark" href="#">Grupo exposicion ficha 2450025</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!--End login-->
+<!-- 
+<footer class="main-footer">
+  <div class="float-right">
+    <b>Version</b> 2.0
+  </div>
+  <strong>Copyright &copy; 2022 <a href="#">Proyecto final Sena</a>.</strong> Todos los derechos reservados.
+</footer>
+-->
 <!-- jQuery -->
+
 <script src="plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
 <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
